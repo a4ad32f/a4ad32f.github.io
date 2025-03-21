@@ -1,0 +1,12 @@
+site_name: a4ad32f's Portfolio
+repo_url: https://github.com/a4ad32f/a4ad32f.github.io
+nav:
+  - Home: index.md
+  - Local Minecraft Cluster: mc_servers.md
+  - Hybrid Parallel Linear Algebra Library: lin_alg_lib.md
+  - Other Projects: other_projects.md
+theme: readthedocs
+extra_css: [style.css]
+plugins:
+  - search:
+      enabled: false
