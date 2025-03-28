@@ -1,0 +1,17 @@
+name: Portolio CI/CD
+
+on:
+  push:
+    branches: [ "dev" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build and run Docker container with the portfolio
+      run: |
+        docker build --target release -t portfolio . \
+        docker run -p 8000:8000
